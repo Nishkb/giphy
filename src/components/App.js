@@ -9,6 +9,9 @@ import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 
+
+//render children for context
+
 function App() {
   return (
     <Container
@@ -23,8 +26,8 @@ function App() {
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
-              <Route path="/forgot-password" component={ForgotPassword} />
-            </Switch>
+              <Route path="/forgot-password" component={ForgotPassword} /> 
+             </Switch>
           </AuthProvider>
         </Router>
       </div>
